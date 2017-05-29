@@ -1,1 +1,1 @@
-A demo for Kotlin with Java Swing
+Swing animation with Kotlin
