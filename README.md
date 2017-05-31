@@ -1,4 +1,5 @@
 ## Simple animation with Kotlin and Java Swing
+
 ![atl text](./preview/animation.png)
 
 ## Build
