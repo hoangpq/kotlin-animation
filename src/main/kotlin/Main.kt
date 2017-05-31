@@ -1,7 +1,5 @@
 import java.awt.*
 import javax.swing.*
-import io.reactivex.*
-import io.reactivex.schedulers.Schedulers
 
 class KotlinFrame: JFrame() {
 
