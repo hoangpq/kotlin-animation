@@ -3,7 +3,7 @@ import javax.swing.*
 import io.reactivex.*
 import io.reactivex.schedulers.Schedulers
 
-class KotlinFrame: javax.swing.JFrame() {
+class KotlinFrame: JFrame() {
 
     init { initUI() }
 
@@ -29,20 +29,6 @@ fun main(args: Array<String>) {
         } catch (e: Exception) {
             println(e.message)
         }
-        Flowable.just("Hello, World").subscribe(::println)
-
-
-        Flowable.fromCallable {
-            Thread.sleep(1000)
-            "Done"
-        }
-                .subscribeOn(Schedulers.io())
-                .observeOn(Schedulers.single())
-                .subscribe(::println, Throwable::printStackTrace)
-
-        Thread.sleep(2000)
-
-
         val frame = KotlinFrame()
         frame.isVisible = true
         SwingUtilities.updateComponentTreeUI(frame)
